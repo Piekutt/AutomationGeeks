@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.Gen">
+      <Property ID="Enable" Value="TRUE" />
+      <Property ID="TaskClass" Value="1" />
+    </Group>
+    <Group ID="mapp.AlarmX.List">
+      <Group ID="[0]">
+        <Property ID="List" Value="gAlarmXList" />
+        <Property ID="Offset" Value="0" />
+      </Group>
+    </Group>
+    <Selector ID="mapp.AlarmX.Create" Value="Disabled" />
+    <Group ID="mapp.AlarmX.Core.Retain">
+      <Selector ID="Memory" Value="0" />
+    </Group>
+  </Element>
+</Configuration>

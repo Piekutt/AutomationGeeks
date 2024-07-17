@@ -1,0 +1,41 @@
+                                                                      
+(*error codes of the SYS_LIB services*)
+VAR CONSTANT
+	ERR_BUR_MO_NOTFOUND     	: UINT	:= 3019;    (*module not found*)
+	ERR_BUR_ILLSTATE			: UINT	:= 3302;	(*illegal state of object*)
+	ERR_BUR_ILLTYP				: UINT	:= 3311;	(*SYSreset - invalid input value for mode*)
+	ERR_BUR_ILLPAR				: UINT	:= 3317;	(*illegal parameter*)
+	ERR_BUR_ILLOBJ				: UINT	:= 3324;	(*object does not exist*)
+	ERR_BUR_NOENTRY         	: UINT	:= 3332;    (*no entry*)
+	ERR_BUR_TOOLONG_PVNAME		: UINT	:= 3333;	(*too long PV name*)
+	ERR_BUR_ILLIDENT        	: UINT	:= 3336;    (*illegal ident*)
+	ERR_BUR_NOTIME				: UINT	:= 3584;	(*time not available*)
+	ERR_BUR_TMP_ALLOC			: UINT	:= 3601;	(*not enough continuous memory*)
+	ERR_BUR_TMP_FREE			: UINT	:= 3701;	(*invalid pointer/length*)
+END_VAR
+
+(*state for object PLC task*)
+VAR CONSTANT
+	Z_ST_created				: UINT	:= 1;		(*object installed*)
+	Z_ST_running				: UINT	:= 2;		(*object running*)
+	Z_ST_blocked				: UINT	:= 3;		(*object stopped*)
+	Z_ST_exist					: UINT	:= 16#00;	(*object exists*)
+	Z_ST_installed				: UINT	:= 16#82;	(*temporary status during installation*)
+	Z_ST_PVinstalled			: UINT	:= 16#83;	(*temporary status during installation*)
+	Z_ST_IOinstalled			: UINT	:= 16#84;	(*temporary status during installation*)
+	Z_ST_IOdeinstalled			: UINT	:= 16#85;	(*temporary status during installation*)
+	Z_ST_PVdeinstalled			: UINT	:= 16#86;	(*temporary status during installation*)
+	Z_ST_delete					: UINT	:= 16#87;	(*temporary status during installation*)
+	Z_ST_stdebug				: UINT	:= 16#88;	(*temporary status during installation*)
+	Z_ST_tmp_suspended			: UINT	:= 16#90;	(*object temporarily stopped*)
+END_VAR
+
+(*shutdown/reboot types*)
+VAR CONSTANT
+	SYSLIB_WARMSTART				: USINT	:= 16#01;	(*WARMSTART (with restart)*)
+	SYSLIB_COLDSTART				: USINT	:= 16#02;	(*COLDSTART (with restart)*)
+	SYSLIB_WARMSTART_NO_REBOOT		: USINT	:= 16#11;	(*WARMSTART (no restart, only shutdown)*)
+	SYSLIB_COLDSTART_NO_REBOOT		: USINT	:= 16#12;	(*COLDSTART (no restart, only shutdown)*)
+	SYSLIB_DIAGNOSTICS				: USINT	:= 16#20;	(*DIAGNOSTICS (with restart)*)
+	SYSLIB_SERVICE					: USINT	:= 16#40;	(*SERVICE (with restart) *)
+END_VAR

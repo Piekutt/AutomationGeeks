@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="mCoWebServerCfg" Type="mcowebservercfg">
+    <Group ID="DocumentRoot">
+      <Property ID="TransferGroup" Value="mappCockpit" />
+      <Property ID="FilePath" />
+    </Group>
+  </Element>
+</Configuration>
