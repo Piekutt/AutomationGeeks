@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAlarmXHistory" Type="mpalarmxhistory">
+    <Group ID="mapp.Gen">
+      <Property ID="Enable" Value="TRUE" />
+      <Property ID="Audit" Value="TRUE" />
+    </Group>
+    <Group ID="mapp.AlarmX.History">
+      <Group ID="Export">
+        <Property ID="TimeStampPattern" Value="%Y-%m-%d %H:%M:%S:%L" />
+        <Property ID="AutoExtension" Value="TRUE" />
+        <Property ID="ColumnSeparator" Value="," />
+      </Group>
+      <Selector ID="Memory" Value="0">
+        <Property ID="Size" Value="200" />
+        <Property ID="BufferSize" Value="10" />
+        <Property ID="Interval" Value="60" />
+      </Selector>
+      <Property ID="Scope" Value="0" />
+    </Group>
+  </Element>
+</Configuration>
