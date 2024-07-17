@@ -1,0 +1,4 @@
+VAR
+	switch : BOOL;
+	lamp : BOOL;
+END_VAR
