@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="MediaPackage" PackageType="MediaPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package" TransferedForTargetSourceCompare="true">Img_HD_PT1</Object>
+    <Object Type="Package">Img_HD_LS1</Object>
+    <Object Type="Package">Img_HD_LS2</Object>
+    <Object Type="Package">Img_HD_LS3</Object>
+    <Object Type="Package">Img_HD_LS4</Object>
+    <Object Type="Package">Img_HD_LS5</Object>
+  </Objects>
+</Package>

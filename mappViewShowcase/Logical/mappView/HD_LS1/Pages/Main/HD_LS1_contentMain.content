@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="HD_LS1_contentMain" guid="ad8e31e9-7618-4bf1-b6fc-f9c2fdf84b5f" height="708" width="1258" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="10" left="10" width="325" height="280" zIndex="0" text="PRODUCTION">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.DonutChart" id="DonutChart1" top="1" left="32" width="238" height="238" zIndex="0">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.DonutChartItem" id="DonutChartItem1" top="43" left="114" zIndex="0" text="DonutChartItem1" value="100" style="orange" />
+            <Widget xsi:type="widgets.brease.DonutChartItem" id="DonutChartItem2" top="15" left="167" zIndex="1" text="DonutChartItem2" style="gold" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="10" left="350" width="890" height="395" zIndex="1" text="OVERVIEW">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.BarChart" id="BarChart1" top="30" left="11" zIndex="0" gridColor="rgba(255, 255, 255, 0)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem1" zIndex="0" text="" value="67" style="gold" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem2" zIndex="1" text="" value="33" style="orange" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem3" zIndex="2" text="" value="80" style="gold" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem4" zIndex="3" text="" value="20" style="orange" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem5" zIndex="4" text="" value="70" style="gold" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem6" zIndex="5" text="" value="30" style="orange" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem7" zIndex="6" text="" style="gold" />
+            <Widget xsi:type="widgets.brease.BarChartItem" id="BarChartItem8" zIndex="7" text="" style="orange" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="300" left="10" width="325" height="105" zIndex="2" text="PRODUCTS">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputProducts" top="2" left="69" width="183" height="61" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="center" fontSize="48px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="HD_LS1_system" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="HD_LS1_System_isValid" comment="Set dark or light theme depending on &#xA;session variable value&#xA;">
+      <Source xsi:type="session.Event" refId="::SYSTEM:clientInfo.isValid" event="ValueChanged" />
+      <EventHandler>
+        <Action>
+          <ReadTarget xsi:type="session.VariableAction.Read" refId="HD_LS1_Theme">
+            <Method xsi:type="session.VariableAction.GetValue" />
+          </ReadTarget>
+          <Result>
+            <ResultHandler condition="result">
+              <Action>
+                <Target xsi:type="clientSystem.Action">
+                  <Method xsi:type="clientSystem.Action.ChangeTheme" theme="BuR_Theme_ABB_Light" />
+                </Target>
+              </Action>
+            </ResultHandler>
+            <ResultHandler condition="NOT result">
+              <Action>
+                <Target xsi:type="clientSystem.Action">
+                  <Method xsi:type="clientSystem.Action.ChangeTheme" theme="BuR_Theme_ABB_Dark" />
+                </Target>
+              </Action>
+            </ResultHandler>
+          </Result>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

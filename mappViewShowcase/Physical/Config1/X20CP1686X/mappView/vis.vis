@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vdef:Visualization id="vis" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
+  <StartPage pageRefId="Main" />
+  <Pages>
+    <Page refId="Main" />
+    <Page refId="HD_LS1_Alarm" />
+    <Page refId="HD_LS1_SDM" />
+    <Page refId="HD_LS1_Production" />
+    <Page refId="HD_LS1_Service" />
+  </Pages>
+  <Navigations />
+  <BindingsSets>
+    <BindingsSet refId="Prod1" />
+    <BindingsSet refId="HD_LS1_contentNavigation" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="HD_LS1_contentAlarmList" />
+    <EventBindingsSet refId="HD_LS1_system" />
+    <EventBindingsSet refId="HD_LS1_contentNavigation" />
+  </EventBindingsSets>
+  <Dialogs />
+  <Contents>
+    <Content refId="HD_LS1_contentHeader" />
+    <Content refId="HD_LS1_contentNavigation" />
+    <Content refId="HD_LS1_contentMain" />
+    <Content refId="HD_LS1_contentAlarmMgt" />
+    <Content refId="HD_LS1_contentAlarmList" />
+    <Content refId="HD_LS1_contentAlarmHistory" />
+    <Content refId="HD_LS1_contentSDM" />
+    <Content refId="HD_LS1_contentProductionMgt" />
+    <Content refId="HD_LS1_contentServiceMgt" />
+    <Content refId="Prod1" />
+    <Content refId="HD_LS1_contentProduction2" />
+    <Content refId="HD_LS1_contentProduction3" />
+    <Content refId="HD_LS1_contentService1" />
+    <Content refId="HD_LS1_contentService2" />
+    <Content refId="HD_LS1_contentService3" />
+  </Contents>
+  <SnippetsSets />
+  <VariablesSets>
+    <VariablesSet refId="HD_LS1" />
+  </VariablesSets>
+  <ExpressionsSets />
+  <StartTheme themeRefId="BuR_Theme_ABB_Dark" />
+  <Themes>
+    <Theme refId="BuR_Theme_ABB_Dark" />
+    <Theme refId="BuR_Theme_ABB_Light" />
+  </Themes>
+  <Configurations>
+    <Configuration key="activityCount" value="false" />
+    <Configuration key="zoom" value="true" />
+    <Gestures>
+      <!--<SystemGesture1 touchPoints="2" />
+		  <SystemGesture2 touchPoints="2" />
+		  <SystemGesture3 touchPoints="2" />-->
+    </Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards>
+  </Configurations>
+</vdef:Visualization>

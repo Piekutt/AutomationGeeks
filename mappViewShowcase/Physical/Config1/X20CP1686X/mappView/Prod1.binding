@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="Prod1" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <Binding mode="oneWay">
+      <Source xsi:type="brease" contentRefId="Prod1" widgetRefId="BasicSliderGraphValue" attribute="node" />
+      <Target xsi:type="brease" contentRefId="Prod1" widgetRefId="OnlineChartHDA1" attribute="graph[graph1].node" />
+    </Binding>
+  </Bindings>
+</BindingsSet>

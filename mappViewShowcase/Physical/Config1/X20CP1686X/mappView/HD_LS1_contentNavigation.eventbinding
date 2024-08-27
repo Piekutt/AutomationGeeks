@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="HD_LS1_contentNavigation" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="HD_LS1_contentNavigation.ButtonUserSettings.ValueChanged">
+      <Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="HD_LS1_contentNavigation" widgetRefId="ButtonUserSettings" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="HD_LS1_contentNavigation" widgetRefId="FlyOutUserConfig">
+            <Method xsi:type="widgets.brease.FlyOut.Action.Open" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="NOT newValueBool">
+        <Action>
+          <Target xsi:type="widgets.brease.FlyOut.Action" contentRefId="HD_LS1_contentNavigation" widgetRefId="FlyOutUserConfig">
+            <Method xsi:type="widgets.brease.FlyOut.Action.Close" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="HD_LS1_contentNavigation.ToggleSwitch1.ValueChanged">
+      <Source xsi:type="widgets.brease.ToggleSwitch.Event" contentRefId="HD_LS1_contentNavigation" widgetRefId="ToggleSwitch1" event="ValueChanged" />
+      <EventHandler condition="newValueBool">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.ChangeTheme" theme="BuR_Theme_ABB_Light" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="NOT newValueBool">
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.ChangeTheme" theme="BuR_Theme_ABB_Dark" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

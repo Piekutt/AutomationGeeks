@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="HD_LS1_contentProductionMgt" guid="2582ad58-d50f-4d71-b4fd-efa14a2c0a49" height="708" width="1258" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.TabControl" id="TabControl1" top="5" left="0" width="1258" height="703" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem1" left="0" width="200" zIndex="0" text="P1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" zIndex="0" contentId="Prod1" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem2" left="0" width="200" zIndex="1" text="P2">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl2" top="0" left="0" zIndex="0" contentId="HD_LS1_contentProduction2" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.TabItem" id="TabItem3" left="0" width="200" zIndex="2" text="P3">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl3" top="0" left="0" zIndex="0" contentId="HD_LS1_contentProduction3" deactivate="true" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

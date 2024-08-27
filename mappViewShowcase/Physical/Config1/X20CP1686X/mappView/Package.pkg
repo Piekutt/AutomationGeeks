@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappViewControl" PackageType="mappViewControl" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Config.mappviewcfg</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">vis.vis</Object>
+    <Object Type="File">HD_LS1_contentAlarmList.eventbinding</Object>
+    <Object Type="File">HD_LS1_system.eventbinding</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">Prod1.binding</Object>
+    <Object Type="File">HD_LS1_contentNavigation.eventbinding</Object>
+    <Object Type="File">HD_LS1_contentNavigation.binding</Object>
+  </Objects>
+</Package>

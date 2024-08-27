@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="HD_LS1_contentSDM" guid="d04beb2b-729a-4498-8a0b-d3dfe08532bb" height="708" width="1258" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.WebViewer" id="WebViewer1" top="0" left="0" width="1258" height="708" zIndex="0" />
+  </Widgets>
+</Content>

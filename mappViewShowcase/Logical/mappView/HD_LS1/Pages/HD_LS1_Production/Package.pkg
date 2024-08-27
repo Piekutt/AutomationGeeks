@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Page description">HD_LS1_Production.page</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">HD_LS1_contentProductionMgt.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">Prod1.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">HD_LS1_contentProduction2.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">HD_LS1_contentProduction3.content</Object>
+  </Objects>
+</Package>
