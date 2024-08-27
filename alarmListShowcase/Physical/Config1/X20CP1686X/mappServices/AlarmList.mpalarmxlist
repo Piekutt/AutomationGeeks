@@ -36,6 +36,73 @@
         <Property ID="AdditionalInformation1" />
         <Property ID="AdditionalInformation2" />
       </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="alarn2" />
+        <Property ID="Message" Value="{$IAT/alarms/generic2}" />
+        <Property ID="Code" Value="2" />
+        <Property ID="Severity" Value="1" />
+        <Selector ID="Behavior" Value="EdgeAlarm">
+          <Property ID="AutoReset" Value="TRUE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Property ID="Retain" Value="FALSE" />
+          <Property ID="Async" Value="FALSE" />
+          <Group ID="DataUpdate">
+            <Group ID="Activation">
+              <Property ID="TimeStamp" Value="FALSE" />
+              <Property ID="Snippets" Value="FALSE" />
+            </Group>
+          </Group>
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="alarm3" />
+        <Property ID="Message" Value="Test" />
+        <Property ID="Code" Value="3" />
+        <Property ID="Severity" Value="1" />
+        <Selector ID="Behavior" Value="PersistentAlarm">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Property ID="Retain" Value="FALSE" />
+          <Property ID="Async" Value="FALSE" />
+          <Group ID="DataUpdate">
+            <Group ID="Activation">
+              <Property ID="TimeStamp" Value="FALSE" />
+              <Property ID="Snippets" Value="FALSE" />
+            </Group>
+          </Group>
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
     </Group>
     <Group ID="mapp.AlarmX.Snippets">
       <Selector ID="AutoDetect" Value="1">

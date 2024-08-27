@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAlarmXCategory" Type="mpalarmxcategory" />
+  <Element ID="gAlarmXCategory" Type="mpalarmxcategory">
+    <Group ID="mapp.AlarmX.Categories">
+      <Group ID="[0]">
+        <Property ID="Name" Value="cat" />
+        <Selector ID="SourceProperty" Value="Code">
+          <Property ID="Code" Value="0..10" />
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
 </Configuration>
